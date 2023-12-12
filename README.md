@@ -2,7 +2,7 @@
 #### Video Demo:  https://www.youtube.com/watch?v=HqZ_2oERzPU
 #### Description:
 
-![Minimal Logo](public/src/icons/minimal-logo.png)
+![Minimal Logo](public/src/icons/minimal.png)
 
 ## Overview
 
