@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
+* {
+  border: none;
+  box-sizing: border-box;
+  color: #FFFFFFDD;
+  font-family: "Space Grotesk";
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+
+body {
+  font-size: 1.2rem;
+  background: #030712;
+  background-image: url('../img/bg.jpeg');
+  background-size: cover;
+  backdrop-filter: blur(2px)
+}
+
+p.quotes {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+  text-align: right;
+}
+
+h2.clock {
+  text-align: left;
+  font-size: 5rem
+}
+
+.container {
+  width: 100%;
+  padding: 10rem 10rem;
+  height: 100vh;
+  background: #03071299;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 8rem;
+}
+
+.content {
+  min-width: 320px;
+  width: 900px;
+  max-width: 900px;
+}
+
+.widget {
+  margin: 4rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  width: 100%;
+  padding: 1.6rem;
+  font-size: 1.2rem;
+  background: #FFFFFF40;
+  color: #FFF;
+  border-radius: .4rem;
+  outline: none;
+  box-shadow: 0rem .2rem .2rem #03071220;
+  margin-bottom: 2rem;
+}
+
+.sites .browse {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.8rem;
+  font-size: 1.5rem;
+}
+
+.sites .browse .addsitebtn {
+  align-self: flex-end;
+  font-size: 2.4rem;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  color: #FFFFFFAA;
+  border: 2px solid #FFFFFF60;
+  transition: transform .2s;
+}
+
+.sites .browse .addsitebtn.cross {
+  transform: rotate(45deg);
+}
+
+.sites .browse a {
+  text-decoration: none;
+}
+
+.sites .addsite.show {
+  display: flex;
+}
+
+.sites .addsite {
+  display: none;
+  gap: 1rem;
+  margin-top: 4rem;
+}
+
+.sites .addsite input{
+  padding: 1rem;
+  border-radius: .2rem;
+}
+
+.sites .addsite button {
+  width: 240px;
+  padding: 1rem;
+  font-size: 1.2rem;
+  background: #FFFFFF60;
+  border-radius: .2rem;
+  outline: none;
+  box-shadow: 0rem .2rem .2rem #03071220;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.tasks {
+  width: 20rem;
+}
+
+.tasks button {
+  display: block;
+  width: 100%;
+  background: transparent;
+  font-size: 1.2rem;
+  margin: 1rem 0rem;
+  padding: 0rem 1rem 0rem 2rem;
+  cursor: pointer;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tasks button:hover {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+}
+
+.tasks button::before {
+  content: url("../icons/check.svg");
+  position: absolute;
+  left: 0rem;
+}
+
+.tasks button:hover::after{
+  width: calc(100% - 2rem);
+}
+
+::placeholder {
+  color: #FFFFFFAA;
+}
+
+@media (max-width: 1400px) {
+  .container {
+    padding: 6rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 4rem;
+  }
+}

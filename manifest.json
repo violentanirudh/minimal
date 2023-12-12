@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Minimal",
+  "description": "Focus On Priorities",
+  "version": "1.0",
+  "permissions": ["unlimitedStorage", "storage", "scripting"],
+  "chrome_url_overrides": {
+    "newtab": "public/index.html"
+  },
+  "action": {
+    "default_popup": "public/popup.html",
+    "default_icon": "public/src/icons/icon.png"
+  }
+}
