@@ -14,6 +14,7 @@ body {
   font-size: 1.2rem;
   background: #030712;
   background-image: url('../img/bg.jpeg');
+  background-attachment: fixed;
   background-size: cover;
   backdrop-filter: blur(2px)
 }
@@ -40,15 +41,14 @@ h2.clock {
   margin: auto;
   display: flex;
   justify-content: space-around;
+  overflow-y: scroll;
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 8rem;
 }
 
 .content {
-  min-width: 320px;
-  width: 900px;
-  max-width: 900px;
+  width: clamp(400px, calc(100% - 32rem), 1000px)
 }
 
 .widget {
@@ -164,6 +164,18 @@ input {
 
 ::placeholder {
   color: #FFFFFFAA;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f1f1f1;
 }
 
 @media (max-width: 1400px) {

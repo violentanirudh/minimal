@@ -8,15 +8,12 @@ build('p', calendar, {class: 'date'})
 build('p', calendar, {class: 'day'})
 const searchBar = build('form', content, {action: 'https://google.com/search', method: 'GET'})
 const searchInput = build('input', searchBar, {name: 'q', placeholder: 'Search...', autocomplete: 'off'})
-
 const cards = new Extensions(clock, calendar, quotes)
+
 const tasks = new Tasks(build('tasks', main, {class: 'tasks'}), build)
 const sites = new Sites(build('sites', content, {class: 'sites'}), build)
 
 
-document.querySelectorAll('.tasks button').forEach((item) => {
-
-})
 
 document.querySelector('.taskinput').addEventListener('keydown', (event) => {
   if (event.key === 'Enter') {
